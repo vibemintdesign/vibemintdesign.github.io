@@ -98,8 +98,9 @@ margin-right:auto;
 
 .portraits-gallery{
 display:grid !important;
-grid-template-columns:repeat(3, 1fr);
+grid-template-columns:1fr 1fr 1fr !important;
 gap:20px !important;
+margin-top:30px;
 }
 
 .portraits-gallery img{
@@ -206,9 +207,7 @@ overflow-wrap:break-word;
 }
   
 .portraits-gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+grid-template-columns:1fr 1fr !important;
 gap:10px;
 margin-top:20px;
 } 
