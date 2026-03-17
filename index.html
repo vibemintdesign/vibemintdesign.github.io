@@ -97,17 +97,17 @@ margin-right:auto;
 }
 
 .portraits-gallery{
-display:grid !important;
-grid-template-columns:repeat(3 1fr) !important;
-gap:10px !important;
-margin-top:20px !important;
+display:grid;
+grid-template-columns:repeat(3 1fr);
+gap:10px;
+margin-top:20px;
 }
 
 .portraits-gallery ing{
 width: 100%;
 max-width: 120px;
 height:auto;
-display: inline-block;
+display: block;
 margin: 5px;
 }
  
@@ -172,6 +172,7 @@ font-size:14px;
 }
 
 @media (max-width:768px){
+  
 .mobile-break{
 display:block;
 }
@@ -204,8 +205,11 @@ margin-left:-4px !important;
 white-space:normal;
 word-break:break-word;
 overflow-wrap:break-word;
-} 
+}
   
+.portraits-gallery{
+grid-template-columns: repeat(2 1fr):
+} 
 }
   
 </style>
