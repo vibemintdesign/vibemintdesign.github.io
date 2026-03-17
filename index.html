@@ -346,9 +346,13 @@ WhatsApp Order
 </div>
 
 <script>
-document.querySelector-ALL(`.portraits-gallery img`).forEach(img=>{
-img.onclick=()=>window.open(img.src, `_self`);
-});
+window.onload = function() {
+ document.querySelector-ALL(`.portraits-gallery img`).forEach(function(img){
+  img.onclick = function(){
+    window.open(this.src, `_self`);
+  );
+ });
+ };
 </script>
   
 </body>
