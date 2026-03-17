@@ -205,15 +205,16 @@ overflow-wrap:break-word;
 }
   
 .portraits-gallery{
-display:grid;
-grid-template-columns: repeat(2, 1fr);
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 gap:10px;
 } 
 
 .portraits-gallery img{
-width:100%;
-height:150px;
-object-fit:cover;
+width:48%;
+height:auto;
+display:block;
 }
   
 </style>
