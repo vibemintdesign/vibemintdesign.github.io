@@ -205,8 +205,15 @@ overflow-wrap:break-word;
 }
   
 .portraits-gallery{
-grid-template-columns: repeat(2 1fr):
+display:grid;
+grid-template-columns: repeat(2 1fr);
+gap:10px;
 } 
+
+.portraits-gallery img{
+width:100%;
+height:150px;
+object-fit:cover;
 }
   
 </style>
