@@ -97,16 +97,17 @@ margin-right:auto;
 }
 
 .portraits-gallery{
-display:grid;
-grid-template-columns:repeat(4, 1fr);
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 gap:15px;
 margin-top:30px;
 }
 
 .portraits-gallery img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
+width:22%;
+height:auto;
+display:block;
 margin-top:40px;
 }
  
@@ -214,7 +215,7 @@ margin-top:20px;
   
 }
 .portraits-gallery img{
-width:48%;
+width:30%;
 height:auto;
 display:block;
 }
