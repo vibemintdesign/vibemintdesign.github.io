@@ -97,16 +97,16 @@ margin-right:auto;
 }
 
 .portraits-gallery{
-display:grid !important;
-grid-template-columns:1fr 1fr 1fr !important;
-gap:20px !important;
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:15px;
 margin-top:30px;
 }
 
 .portraits-gallery img{
-width:100% !important;
-height:auto !important;
-display:block;
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
 margin-top:40px;
 }
  
@@ -207,10 +207,11 @@ overflow-wrap:break-word;
 }
   
 .portraits-gallery{
-grid-template-columns:1fr 1fr !important;
+grid-template-columns:repeat(2, 1fr);
 gap:10px;
 margin-top:20px;
 } 
+  
 }
 .portraits-gallery img{
 width:48%;
