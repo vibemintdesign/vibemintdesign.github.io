@@ -97,22 +97,16 @@ margin-right:auto;
 }
 
 .portraits-gallery{
-display:flex !important;
-flex-wrap:wrap !important;
-justify-content:center !important;
-margin-top:40px !important;
-gap:12% !important;
-}
-
-.portraits-gallery a{
-flex:0 0 220px !important; 
-max-width:220px !important;
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+margin-top:40px;
+gap:20px;
 }
   
 .portraits-gallery img{
-height:auto !important;
-width:100% !important;
-display:block !important;
+height:auto;
+width:100%;
+display:block;
 }
  
 .art{
