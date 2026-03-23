@@ -142,19 +142,21 @@ margin-right:auto;
 }
 
 .etsy-gallery{
-display:inline-block;
-width:auto;
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:10px;
+max-width:900px;
+margin:0 auto;
 }
 
 .etsy-gallery img{
-width:250 px !important;
-height:auto !important;
-display:block !important;
+width:100%;
+height:auto;
+border-radius:6px;
 }
 
 .etsy-gallery a{
-display:inline-block !important;
-width:auto !important;
+display:block;
 }
   
 .button{
