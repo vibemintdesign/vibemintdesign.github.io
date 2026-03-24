@@ -220,8 +220,8 @@ display:grid;
 grid-template-columns:repeat(4, 1fr);
 padding-left:0 10px;
 padding-right:0 10px;
-bpx-sizing:border-box;
-gap:8px;  
+box-sizing:border-box;
+gap:6px;  
 }
 
 .portraits-gallery img{
@@ -235,6 +235,17 @@ display:block;
    padding-left:80px;
    padding-right:80px;
  }
+
+@meia (max-width:600px){
+.etsy-gallery{
+grid-template-columns:repeat(3, 1fr) !important;
+gap:6px;
+}
+
+.etsy-gallery img{
+width:100%;
+height:auto;
+}
 }
   
 </style>
