@@ -266,6 +266,23 @@ height:auto;
 white-space: nowrap;
 }
 
+@media screen and (max-width:768px){
+  .portraits-gallery{
+    display:grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    column-gap:12px !important;
+    row-gap:15px !important;
+    padding:0 10px !important;
+  }
+
+.portraits-gallery img{
+   width:100% !important;
+   height:auto !important;
+   display:block !important;
+  }
+}
+
+
 </style>
 
 </head>
